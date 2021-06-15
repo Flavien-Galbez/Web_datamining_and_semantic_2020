@@ -1,0 +1,79 @@
+Lab4 Flavien Galbez
+
+Part 1 :
+Ex 1 :
+1 : ?per rdf:type ns:Son.
+2 : ?per rdf:type ns:Daughter.
+3 : ?per rdf:type ns:Parent.
+4 : ?per rdf:type ns:Father.
+5 : ?per rdf:type ns:Mother.
+6 : ?per rdf:type ns:Grandmother.
+7 : ?per rdf:type ns:Grandfather.
+8 : ?per rdf:type ns:Brother.
+9 : ?per rdf:type ns:Sister.
+
+Ex2 :
+1 :
+
+SELECT ?name ?age
+WHERE {
+	?per2 ns:name "Peter" .
+	?per ns:isChildOf ?per2 .
+	?per ns:name ?name .
+	?per ns:age ?age .
+
+}
+
+2 :
+
+SELECT ?par
+WHERE {
+	?per ns:isFatherOf ?par .
+	?per ns:age ?age .
+	FILTER(?age>40)
+}
+
+3 :
+
+SELECT ?name ?age ?per2
+WHERE {
+	?per ns:nationality "French" .
+	?per ns:name ?name .
+	?per ns:age ?age .
+	?per ns:isMarriedWith ?per2
+
+}
+
+4 :
+
+SELECT DISTINCT ?per2
+WHERE {
+	?per rdf:type ns:Person .
+	?per2 ns:isBrotherOf ?per .
+}
+
+5 :
+
+SELECT DISTINCT ?per2
+WHERE {
+	?per2 rdf:type ns:Female.
+	?per ns:isParentOf ?per2
+}
+
+6 :
+
+SELECT DISTINCT ?per3
+WHERE {
+	?per rdf:type ns:Person.
+	?per2 ns:isParentOf ?per .
+	?per3 rdf:type ns:Male .
+	?per3 ns:isSiblingOf ?per2 .
+}
+
+
+7 :
+
+SELECT ?per
+WHERE {
+	?per ns:isMarriedWith ?per2 .
+}

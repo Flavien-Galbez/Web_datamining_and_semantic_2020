@@ -1,0 +1,130 @@
+{ 
+  "http://sample/facts/luke" : { 
+    "http://sample/facts/has-enemy" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/vader"
+    }
+     ] ,
+    "http://sample/facts/actor" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/hamill"
+    }
+     ] ,
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "Luke Skywalker"
+    }
+     ] ,
+    "http://sample/facts/has-sister" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/leia"
+    }
+     ] ,
+    "http://sample/facts/has-friend" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/han"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/ford" : { 
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "Harrison Ford"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/vader" : { 
+    "http://sample/facts/actor" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/prowse"
+    }
+     ] ,
+    "http://sample/facts/has-son" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/luke"
+    }
+     ] ,
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "Darth Vader"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/SW4" : { 
+    "http://sample/facts/character" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/vader"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/luke"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/leia"
+    }
+    , { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/han"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/fisher" : { 
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "Carrie Fisher"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/leia" : { 
+    "http://sample/facts/actor" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/fisher"
+    }
+     ] ,
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "Leia"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/prowse" : { 
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "David Prowse"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/hamill" : { 
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "Mark Hamill"
+    }
+     ] ,
+    "http://sample/facts/age" : [ { 
+      "type" : "literal" ,
+      "value" : "67"
+    }
+     ]
+  }
+   ,
+  "http://sample/facts/han" : { 
+    "http://sample/facts/actor" : [ { 
+      "type" : "uri" ,
+      "value" : "http://sample/facts/ford"
+    }
+     ] ,
+    "http://sample/facts/name" : [ { 
+      "type" : "literal" ,
+      "value" : "Han Solo"
+    }
+     ]
+  }
+}

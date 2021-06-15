@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prop: <http://sample/prop/> .
+@prefix type: <http://sample/type/> .
+@prefix ex: <http://sample/facts/> .
+
+ex:StarWarsIV  rdf:type type:Movie;
+              prop:has-character ex:LukeSkywalker;
+              prop:has-character ex:MasterYoda;
+              prop:has-character ex:Chewbacca.
+
+ex:LukeSkywalker rdf:type type:Human ;
+        rdf:type type:Jedi;
+        prop:SisterOrBrotherOf  ex:Leia ;
+        prop:FriendsWith        ex:HanSolo ;
+        prop:hasEnemy           ex:DarthVader .
+
+ex:HanSolo rdf:type type:Pilot ;
+        rdf:type type:Human .
+
+ex:Leia prop:FriendsWith     ex:HanSolo ;
+        rdf:type type:Human .
+
+ex:MasterYoda rdf:type type:Jedi;
+              rdf:type type:Unknown .
+
+ex:Chewbacca rdf:type ex:Wookie ;
+             rdf:type ex:Co-pilot;
+             prop:is-copilot-of ex:HanSolo.
+
+ex:DarthVader prop:isFatherOf      ex:LukeSkywalker .
+
+ex:MillenniumFalcon prop:has-speed ex:1.5;
+                    rdf:type type:Starship.
+
+ex:MarkHamill  prop:isTheActorOf  ex:LukeSkywalker ;
+        prop:age           ex:67 .
+
+ex:HarrisonFord  prop:isTheActorOf  ex:HanSolo .
+
+ex:CarrieFisher  prop:isTheActorOf  ex:Leia .
+
+ex:DavidProwse  prop:isTheActorOf  ex:DarthVader .

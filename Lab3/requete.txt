@@ -1,0 +1,39 @@
+#Partie 2
+#Requette 1
+
+SELECT ?age
+WHERE {
+	 ?age rdf:Person "Peter" .
+}
+
+#Requette 2
+
+SELECT ?y
+WHERE {?x   rdf:Person   "Sylvie".
+       ?x ex:isChildOf   ?y}
+
+#Requette 3
+
+SELECT ?name
+WHERE {?x   rdf:Female   ?age.
+       FILTER(?age > 30)}
+
+#Requette 3
+
+SELECT ?y
+WHERE {Person   rdfs:subClassOf   ?y.}
+
+#Partie 2
+#Requette 1
+
+SELECT ?isValueOf
+WHERE {
+      ?isValueOf dbpedia:ontology/birthDate <http://dbpedia.org/resource/Thomas_Edison>
+}
+
+#Requette 2
+
+SELECT ?isValueOf
+WHERE {
+      ?isValueOf dbpedia:ontology/deathDate <http://dbpedia.org/resource/Thomas_Edison>
+}

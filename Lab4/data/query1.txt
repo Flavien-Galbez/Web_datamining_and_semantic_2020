@@ -1,0 +1,14 @@
+PREFIX ns: <http://www.owl-ontologies.com/unnamed.owl#>
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?name ?age
+WHERE {
+	?per2 ns:name "Peter" .
+	?per ns:isChildOf ?per2 .
+	?per ns:name ?name .
+	?per ns:age ?age .
+
+}

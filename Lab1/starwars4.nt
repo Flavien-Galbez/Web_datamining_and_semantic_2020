@@ -1,0 +1,21 @@
+<http://sample/facts/SW4> <http://sample/facts/character> <http://sample/facts/luke> .
+<http://sample/facts/SW4> <http://sample/facts/character> <http://sample/facts/han> .
+<http://sample/facts/SW4> <http://sample/facts/character> <http://sample/facts/leia> .
+<http://sample/facts/SW4> <http://sample/facts/character> <http://sample/facts/vader> .
+<http://sample/facts/luke> <http://sample/facts/name> "Luke Skywalker" .
+<http://sample/facts/luke> <http://sample/facts/has-friend> <http://sample/facts/han> .
+<http://sample/facts/luke> <http://sample/facts/has-sister> <http://sample/facts/leia> .
+<http://sample/facts/luke> <http://sample/facts/has-enemy> <http://sample/facts/vader> .
+<http://sample/facts/luke> <http://sample/facts/actor> <http://sample/facts/hamill> .
+<http://sample/facts/hamill> <http://sample/facts/name> "Mark Hamill" .
+<http://sample/facts/hamill> <http://sample/facts/age> "67" .
+<http://sample/facts/han> <http://sample/facts/name> "Han Solo" .
+<http://sample/facts/han> <http://sample/facts/actor> <http://sample/facts/ford> .
+<http://sample/facts/ford> <http://sample/facts/name> "Harrison Ford" .
+<http://sample/facts/leia> <http://sample/facts/name> "Leia" .
+<http://sample/facts/leia> <http://sample/facts/actor> <http://sample/facts/fisher> .
+<http://sample/facts/fisher> <http://sample/facts/name> "Carrie Fisher" .
+<http://sample/facts/vader> <http://sample/facts/name> "Darth Vader" .
+<http://sample/facts/vader> <http://sample/facts/actor> <http://sample/facts/prowse> .
+<http://sample/facts/vader> <http://sample/facts/has-son> <http://sample/facts/luke> .
+<http://sample/facts/prowse> <http://sample/facts/name> "David Prowse" .
